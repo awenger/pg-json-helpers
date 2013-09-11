@@ -5,11 +5,11 @@ PostgreSQL Json Helpers
 
 ## Install
 
-Execute json_helpers.sql in the Database 
+Execute `json_helpers.sql` in the Database 
 
 ## Test
 
-Execute test.sql in the Database
+Execute `test.sql` in the Database
 
 ## Basic Usage
 

@@ -32,7 +32,7 @@ SELECT json_helpers.json_is_array('{"a":0.1}'::json); // false
 * string
 * boolean
 * number
-** integer
+* * integer
 
 ## Usage for Table Constraints
 ```

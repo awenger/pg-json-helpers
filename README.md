@@ -20,8 +20,11 @@ SELECT json_helpers.json_type('[0.1]'::json);  // 'array'
 
 SELECT json_helpers.json_is_number('0.1'::json); // true
 SELECT json_helpers.json_is_array('{"a":0.1}'::json); // false
+...
 
-....
+// also works with pg json operator
+SELECT json_helpers.json_type('{"a":[0.1],"b":"lore ipsum"}'::json->'a'); // array
+SELECT json_helpers.json_type('{"a":[0.1],"b":"lore ipsum"}'::json->'b'); // string
 ```
 
 ## Possible types
